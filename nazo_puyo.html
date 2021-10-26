@@ -19,5 +19,20 @@ td {
   hello nazo puyo world.
   <div id="field"></div>
   <div id="ansers"></div>
-</body>
+  <pre>
+puyo = new Puyo();
+puyo.placePuyo(1, 'r').placePuyo(1, 'y').placePuyo(1, 'y')
+puyo.placePuyo(2, 'r').placePuyo(2, 'r').placePuyo(2, 'y')
+puyo.placePuyo(5, 'y').placePuyo(5, 'r').placePuyo(5, 'r')
+puyo.placePuyo(6, 'y').placePuyo(6, 'y').placePuyo(6, 'r')
+puyo.showField();
+puyo.nazoPuyo([
+  ['y', 'r'],
+  ['y', 'r'],
+  ['y', 'r'],
+], {
+  doujikeshi: 13,
+})
+  </pre>
+  </body>
 </html>
